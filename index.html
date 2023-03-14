@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>re-birth-list</title>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Bungee+Hairline&family=Wallpoet&display=swap" rel="stylesheet">
+	<style type="text/css">
+		html{font-family: 'Noto Sans KR', sans-serif;scroll-behavior:smooth;}
+		div{background-blend-mode:difference;}
+		body,h1,h2,p,div{margin:0px;padding:0px;}
+		h1{font-weight: 800;word-spacing:-1px; font-size: 3.6em; letter-spacing:-2px;line-height: 120px; text-align: center;padding-top:50px;}
+		body{background-color:black;}
+		p{word-break: keep-all;}
+		a{font-weight:medium;font-size:1em; display:inline-block;}
+		nav{position:fixed;mix-blend-mode:difference;z-index: 1000;}
+		nav ul {display: flex;}
+		nav ul li{list-style-type:none;width:160px;text-align: center; line-height: 40px; padding-left:45px;}
+		nav ul li a{display:block; border-radius:50px;background-color:white; color:black;text-decoration:none;font-weight:bold; box-shadow: rgb(0 0 0 / 20%) 2px 4px 8px inset; height: 40px; width:100px;}
+
+		/*****hover*****/
+
+		.one p:hover{background-color:rgb(56, 148, 107); color:white;transition:all 0.3s;}
+		.two p:hover{background-color:rgb(54, 58, 255); color:white;transition:all 0.3s;}
+		.three p:hover{background-color:rgb(157, 251, 255); color:black;transition:all 0.3s;}
+		.four p:hover{background-color:rgb(255, 253, 105); color:black;transition:all 0.3s;}
+		nav ul li a:hover{background:rgb(25, 25, 112); color:white;transform: all o.5s;}
+
+		/*****shadow*****/
+
+		.shadow{background-color:white;box-shadow:rgb(0 0 0 / 40%) 2px 2px 20px inset;}
+		.shadow2{border-radius: 0px 0px 50px 0px;background-color:white;box-shadow:rgb(0 0 0 / 20%) 2px 4px 10px inset;}
+		.shadow3{border-radius: 0px 0px 0px 50px;background-color:black;box-shadow:blue 2px 4px 10px inset;}
+		.shadow4{border-radius: 0px 0px 0px 50px;background-color:black;box-shadow:yellow 2px 4px 10px inset;}
+
+		/*****area*****/
+
+		.index{width:100px; height:150px;z-index:-1000;position:absolute;text-align: center;border-radius:20px;}
+		.sp{width:240px; height: 50px; line-height:50px;margin:opx 60px;font-weight: 500;display:inline-block;}
+		.main{width:1300px; height:auto;margin:auto;}
+    	.content{width: 1300px;padding-bottom:10px;}
+    	.content2{width: 1300px;height:auto; padding:5px;margin:auto; padding-bottom:200px;padding-top: 200px;}
+    	.content3{width: 1300px; margin-top:10px;} 
+    	.content4{width: 1200px;margin-bottom: 150px; align-content:flex-start;}
+    	.content5{width: 1300px; margin-top:80px;}
+		.col-1{width:1100px;padding-top:30px;margin:auto;}
+		.col-2{width:1000px; margin:auto;}
+		.col-3{width:850px; padding-bottom:20px; padding-left:40px;}
+		.col-4{width:1200px; padding-bottom:20px;margin-left:100px;}
+		.col-5{height: 50px;}
+		.col-6{width:100px;}
+		.col-7{width:1200px;padding-left:150px;}
+		.col-8{width:850px; padding-bottom:20px; padding-right:40px; text-align:right;}
+		.col-9{width:1200px; padding-bottom:20px;margin-left:75px;}
+		.col-10{width:700px;height:30px;position:absolute;}
+		.col-11{width:1200px;}
+		.bp{width:609px;height:610px; margin:auto;position:absolute;}
+		.bp2{width:609px;height:610px;margin-left:100px;position:absolute;}
+		.bp3{padding-bottom: 50px; margin-left:160px;}
+		.pad-top{padding-top:180px;}
+
+		/*****ect*****/
+
+		.auto{margin:auto;}
+		.center{text-align: center;}
+		.felx{display:flex;}
+		.block{display:block;}
+		.ma{margin:auto; padding-bottom:180px;}
+		.pa-le{padding-left:20px;}
+		.pa-le2{padding-left:320px;}
+		.pa-le3{padding-left:550px;}
+
+		/*****text*****/
+
+		.text-a{font-size:160px;text-align:center;}
+		.text-b{padding-top:10px;font-weight: 400;word-spacing:-1px; font-size: 1.4em; letter-spacing:-1.5px;margin:70px; padding-bottom:0px; text-align:center;}
+		.text-c{font-weight:700;word-spacing:-1px; font-size:2.7em;text-align:left;margin-top:0px;padding-bottom:200px;}
+		.text-d{font-weight:700;word-spacing:-1px; font-size:2.7em;text-align:right;margin-top:0px;padding-bottom:270px;}
+		.text-e{font-weight:700;word-spacing:-1px; font-size:2.7em;text-align:left;margin-top:0px;padding-bottom:270px;}
+		.text-5{font-weight:700;word-spacing:-1px; font-size:2.4em;text-align:center; padding-bottom:120px;}
+		.text-p{font-weight:400;word-spacing:-1px; font-size: 1.5em; letter-spacing:-2px;margin-bottom: 0px; padding:14px;}
+		.ept{writing-mode: vertical-rl;
+			text-orientation: mixed; font-family: 'Bungee Hairline', cursive;position:absolute;padding-left:580px;font-size:2.6em;height:600px;}
+		.ept-2{writing-mode: vertical-rl;text-orientation: mixed; font-family: 'Bungee Hairline', cursive;position:absolute;padding-right:580px;font-size:2.6em;height:600px;}
+		.ept-3{writing-mode: vertical-rl;
+			text-orientation: mixed;font-weight:bold; position:absolute;padding-left:1280px;font-size:2em;height:100px;}
+		.li-he1{line-height:80px;}
+		.li-he2{line-height:70px;}
+
+		.pad-bot1{padding-bottom:20px;}
+		.pad-bot2{padding-bottom:270px;}
+
+		/*****image,size*****/
+
+		.p1{background-image: url("pattern1.png");}
+		.p2{background-image: url("pattern2-1.png");}
+		.p3{background-image: url("pattern3.png");}
+		.p4{background-image: url("pattern4-1.png");}
+		.i1{background-image: url("plant.gif");}
+		.i2{background-image: url("cat.gif");}
+		.i3{background-image: url("bag.gif");}
+		.i4{background-image: url("dragon.gif");}
+		.line{height:10px;width:480px; margin-left:40px;}
+		.line2{height:10px;width:480px; margin-left:780px;}
+		.s{background-color:rgb(25, 25, 112);color:white; width:240px;margin:auto;font-weight: 500;}
+		.size-1{height:5%;width:5%;}
+		.size-2{height:50%; width:50%}
+		.back{background-image: url("https://img.freepik.com/free-vector/detailed-grunge-style-dusty-overlay-texture_1048-14413.jpg");background-attachment: fixed;}
+	
+		/*****color*****/
+
+		.bg-gr{background-color:gray;}
+		.black{background-color:black;}
+		.white{color:white;}
+		.g{color:rgb(56, 148, 107);}
+		.bg-g{background-color:rgb(56, 148, 107);}
+		.lb{color:rgb(54, 58, 255);}
+		.bg-lb{background-color:rgb(54, 58, 255);}
+		.b{color:rgb(157, 251, 255);}
+		.bg-b{background-color:rgb(157, 251, 255);}
+		.y{color:rgb(255, 253, 105);}
+		.bg-y{background-color:rgb(255, 253, 105);}
+
+	</style>
+</head>
+
+<body>
+	
+	<div class="main shadow">
+		<header>
+			<nav id="navigation" >
+				<ul class="auto">
+				    <li><a href="#0">#0</a></li>
+				    <li><a href="#1">#1</a></li>
+				    <li><a href="#2">#2</a></li>
+				    <li><a href="#3">#3</a></li>
+				    <li><a href="#4">#4</a></li>
+				    <li><a href="#5">#5</a></li>
+				</ul>
+			</nav>	
+				<div class="col-6 ept-3">
+					<p class="bg-gr index li-he1" id="0">#0</p>
+				</div> 
+				<section class="content">
+					<div>
+					<div class="col-1">
+						<span class="block text-a">👼🏻👼🏼👼🏽👼🏾👼🏿</span>
+					</div>
+				</section>
+					<section class="content">
+					<div class="col-2">
+						<h1>다음생에는 (____)로 태어날래</h1>
+						<p class="text-b">인간으로 살고 있는 나, 현재 복학 후 왕복 4시간 통학의 쓴맛을 뼈저리게 느끼고 있다. 하루에 아이스 아메리카노 두 잔, 몬스터 한 캔...카페인에 찌들어 있는 삶...
+						 과연 인간으로 사는 게 지구에서 제일 좋은 삶일까 의문이 생긴다.
+						<em>Human</em> 의 삶은 경험해봤으니 다음생엔 다른 걸로 태어나 사는 것도 좋을지도?</p>
+						<img src="arrow.png" class="size-1 block ma">
+					</div>
+				</section>
+			</header>
+			<div class="col-6 pad-top ept-3">
+				<p class="bg-g index li-he1">#1</p>
+			</div> 
+			<section class="content2">
+				<div class="line bg-g" id="1"></div>
+				<div class="felx">
+					<div class="col-3 one" >
+						<h2 class="text-c">식충식물</h2>
+						<p class="text-p pad-100 shadow2">뜨거운 햇살 듬뿍 받으면서 혼자 고독에 잠겨 있다 보면 음식이 저절로 입에 들어 오는 경험을 하게 될겁니다. 
+						요즘 만원으로 한끼 사먹는 것도 어려운 세상인데 공짜 밥이라니! 
+						아침, 점심, 저녁 메뉴를 고민 할 필요 없어요. 
+						다만... 음식은 다 복불복이라는 것.
+						가끔 바퀴벌레 손님이 오지만 꾹 참고 먹어야 됩니다. 
+						꿀꺽 하면 더듬이부터 발 끝까지  흔적도 없이 사라질 거예요. 
+						식물이라고 얕잡아 보다간 큰 코 다칠 수도?
+						</p>
+					</div>
+					<div class="col-4">
+						<div class="bp p1"></div>
+						<div class="bp i1"></div>
+						<div class="col-6 ept">
+								<p class="g"><em>Carnivorous Plant</em></p>
+						</div> 
+					</div>
+			</section>
+			<div class="col-6 pad-top ept-3">
+				<p class="bg-lb index li-he2">#2</p>
+			</div> 
+			<section class="content2 black white">
+				<div class="line2 bg-lb" id="2"></div>
+				<div class="felx">
+					<div class="col-9">
+						<div class="bp p2"></div>
+						<div class="bp i2"></div>
+					</div>
+					<div class="col-6 ept-2">
+						<p class="lb"><em>Cat</em></p>
+					</div> 
+					<div class="col-8 two">
+						<h2 class="text-d">억만장자 주인을 둔 고양이</h2>
+						<p class="text-p pad-100 shadow3">돈많은 어느 집에 고양이로 태어난다면 프리미엄 등급의 맛난 사료, 100여종의 간식,  골프장 보다 넓은 잔디, 어마무시하게 큰 타워들 이 모든게 다 내꺼?!
+            			하악질을 해도 "귀엽다~", 살이 쪄도 "이쁘다~" 칭찬 받으며 뭘 해도 이쁨 받는 사랑둥이로 살 수 있습니다. 
+            			다만 생후 6개월이 되면 중성화 수술로 성 정체성이 없어질지도?
+         				</p>
+					</div>
+				</div>
+			</section>
+			<div class="col-6 pad-top ept-3">
+				<p class="bg-b index li-he1" >#3</p>
+			</div> 
+			<section class="content2">
+				<div class="line bg-b"id="3"></div>
+				<div class="felx">
+					<div class="col-3 three">
+						<h2 class="text-e">빠니보틀의 여행 가방</h2>
+						<p class="text-p pad-100 shadow2">돈과 시간이 없지만 여행가고 싶을 때. 티켓 구매하고, 숙소 예약하고, 중국인으로 오해 받는 등 힘든 것들은 빠니보틀이 해줄 거예요. 그의 여행 가방이 되면 편하게 등에 엎혀서 세계여행을 할 수 있답니다. 가방 주인이 험한 곳으로 여행을 가면 현지인에게 납치 당할 수도 있지만...100만 유튜버와 함께 떠나는 여행이라. 상상만 해도 좋잖아?!</p>
+					</div>
+					<div class="col-4">
+						<div class="bp p3"></div>
+						<div class="bp i3"></div>
+						<div class="col-6 ept">
+								<p class="b"><em>Pani Bottle's Bag</em></p>
+						</div> 
+					</div>
+			</section>
+			<div class="col-6 pad-top ept-3">
+				<p class="bg-y index li-he2" >#4</p>
+			</div> 
+			<section class="content2 black white">
+				<div class="line2 bg-y"id="4"></div>
+				<div class="felx">
+					<div class="col-9">
+						<div class="bp p4"></div>
+						<div class="bp i4"></div>
+					</div>
+					<div class="col-6 ept-2">
+						<p class="y"><em>Dragon</em></p>
+					</div> 
+						<div class="col-8 four">
+							<h2 class="text-d">용</h2>
+							<p class="text-p pad-100 shadow4">이왕 태어난 거 레어 캐릭터인 용으로 태어나게 된다면 인간보다 더 많은 걸 할 수 있을 겁니다.
+							등에 사람들을 태워서 구름 위로 날아다닐 수도 있고, 센과 치히로 실사판에서 하쿠 (용 버전) 배역이 돼서 배우 활동도 할 수 있으며 '살아있는 전설'이라는 타이틀로 기네스 북에 등재 될 수 있어요. 생을 마감하면 아마 실험실에서 썩겠지만 존재만으로도 게임 끝!</p>
+						</div>
+				</div>
+			</section>
+			<div class="col-6 ept-3">
+				<p class="bg-gr index li-he2">#5</p>
+			</div>
+			<section class="content2 back" id="5">
+
+				<div>
+					<p class="text-5">Youtuber's Pick</p>
+					<div class="col-11 auto ">
+						<a href="https://youtu.be/FwdHkdOeHs8" target="_new">
+							<img src="chim.png" class="size-2 bp3">
+						</a>
+						<a href="https://youtu.be/_z7ALTDqEGw" target="_new">
+							<img src="jjo.png" class="size-2 bp3 pa-le" >
+						</a>
+					</div>
+						<img src="arrow2.png" class="size-1 pa-le2">
+						<img src="arrow2.png" class="size-1 pa-le3">
+				</div>
+			</section>
+	</div>		
+	<footer class="content5 auto">
+		 	<p class="text-b white li-he1">죽기 전까지 인간으로 잘 살아보겠습니다.<br>
+			아자아자 화이팅!<br>
+			😤</p>
+	</footer>
+</body>
+</html>
